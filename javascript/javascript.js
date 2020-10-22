@@ -38,7 +38,7 @@
 
 // prima variabile //
 
-var utenteparidispari = prompt("Scegli pari o dispari");
+var utenteparidispari = prompt("Scegli pari o dispari").toLowerCase();
 var numeroutente = parseInt(prompt("Scegli un numero da 1 a 5"));
 var numerocomputer = random();
 var sommautentecomputer = somma(numeroutente,numerocomputer);
