@@ -40,6 +40,11 @@
 
 var utenteparidispari = prompt("Scegli pari o dispari").toLowerCase();
 var numeroutente = parseInt(prompt("Scegli un numero da 1 a 5"));
+// validazione numero //
+while(  isNaN(numeroutente) == true){
+     var numeroutente = parseInt(prompt("puoi per favore scegliere un numero da 1 a 5 ?"));
+}
+
 var numerocomputer = random();
 var sommautentecomputer = somma(numeroutente,numerocomputer);
 var sommautentecomputerparidispari = paridispari(sommautentecomputer)
