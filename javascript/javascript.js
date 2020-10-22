@@ -48,6 +48,12 @@ console.log(numerocomputer);
 console.log(sommautentecomputer);
 console.log(sommautentecomputerparidispari);
 
+if(utenteparidispari === sommautentecomputerparidispari){
+  console.log("l utente vince");
+} else{
+  console.log("l utente perde")
+}
+
 
 
 
