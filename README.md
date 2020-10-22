@@ -1,1 +1,1 @@
-repo js-paliedispari
+js-pwdgen-wannabe
