@@ -41,9 +41,14 @@
 var utenteparidispari = prompt("Scegli pari o dispari").toLowerCase();
 var numeroutente = parseInt(prompt("Scegli un numero da 1 a 5"));
 // validazione numero //
-while(  isNaN(numeroutente) == true){
+while(isNaN(numeroutente) === true  ){
      var numeroutente = parseInt(prompt("puoi per favore scegliere un numero da 1 a 5 ?"));
 }
+
+// validazione range //
+// if((numeroutente > 5) && (numeroutente = 0) ){
+//    var numeroutente = parseInt(prompt("puoi per favore scegliere un numero da 1 a 5 ?"));
+// }
 
 var numerocomputer = random();
 var sommautentecomputer = somma(numeroutente,numerocomputer);
@@ -54,9 +59,9 @@ console.log(sommautentecomputer);
 console.log(sommautentecomputerparidispari);
 
 if(utenteparidispari === sommautentecomputerparidispari){
-  console.log("l utente vince");
+  console.log("La somma del numero scelto dal giocatore e il numero scelto dal computer e uguale alla scelta del giocatore pari o dispari quindi vince: " + numeroutente + " + " + numerocomputer + " = " + sommautentecomputer + " = " + utenteparidispari + " = " + sommautentecomputerparidispari );
 } else{
-  console.log("l utente perde")
+  console.log("La somma del numero scelto dal giocatore e il numero scelto dal computer non e uguale alla scelta del giocatore pari o dispari quindi perde: " + numeroutente + " + " + numerocomputer + " = " + sommautentecomputer + " = " + utenteparidispari + " non e uguale alla scelta pari o dispari " + sommautentecomputerparidispari);
 }
 
 
