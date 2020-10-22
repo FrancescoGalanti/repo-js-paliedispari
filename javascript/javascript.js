@@ -42,9 +42,11 @@ var utenteparidispari = prompt("Scegli pari o dispari");
 var numeroutente = parseInt(prompt("Scegli un numero da 1 a 5"));
 var numerocomputer = random();
 var sommautentecomputer = somma(numeroutente,numerocomputer);
+var sommautentecomputerparidispari = paridispari(sommautentecomputer)
 
 console.log(numerocomputer);
 console.log(sommautentecomputer);
+console.log(sommautentecomputerparidispari);
 
 
 
@@ -68,4 +70,16 @@ function somma(num1,num2){
   var sum = num1 + num2;
 
   return sum;
+}
+
+/*
+** creazione funzione pari o dispari con un parametro
+**/
+
+function paridispari(numero){
+  if(numero  % 2 == 0){
+    return "pari";
+  }
+
+  return "dispari"
 }
